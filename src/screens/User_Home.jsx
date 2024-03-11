@@ -5,7 +5,7 @@ import User_Tab from "../components/User_Tab";
 import Reception from "../components/Reception";
 import Chosing from "../components/Chosing";
 import Ads_Card from "../components/Ads_Card";
-const User_Home = () => {
+const User_Home = ({navigation}) => {
   return (
     <View className="flex-1 bg-white items-center px-4">
       <User_Tab />
@@ -15,7 +15,7 @@ const User_Home = () => {
         showsVerticalScrollIndicator={false}
       >
         <Reception />
-        <Chosing />
+        <Chosing navigation={navigation} />
         <View
           style={{ width: "100%" , marginBottom: 170 }}
           className="flex-column h-40 justify-between"

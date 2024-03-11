@@ -6,12 +6,25 @@ const User_Tab = () => {
     <View>
       <View
         style={[{ width: "100%", height: 70 }, styles.shadowTop]}
-        className="bg-orange-100 mt-12 justify-between rounded-lg px-4 flex-row"
+        className="bg-orange-50 mt-12 justify-between rounded-lg px-4 flex-row"
       >
+        <View className="justify-center mr-1">
+          <TouchableOpacity className="items-center justify-center">
+            <View
+              // style={styles.shadow}
+              className="items-center justify-center w-10 h-10 bg-white rounded-lg"
+            >
+              <Image
+                source={require("../../assets/img/menu.png")}
+                className="w-10 h-10"
+              />
+            </View>
+          </TouchableOpacity>
+        </View>
         <View className="justify-center">
           <Text className="text-orange-900 text-lg font-bold">Location</Text>
           <Text className="text-sm text-gray-500">
-            Laghouat , Laghouat , Laghouat Algeria
+            Laghouat , Laghouat  Algeria
           </Text>
         </View>
         {/* Default case in Registre */}

@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import React from "react";
 
-const Chosing = () => {
+const Chosing = ({navigation}) => {
   return (
     <View>
       <View className="flex-row my-4 mr-10">
@@ -13,6 +13,7 @@ const Chosing = () => {
         <TouchableOpacity
           style={{ width: "30%", height: 100 }}
           className="bg-orange-100 items-center justify-center rounded-md flex-column space-y-1"
+          onPress={()=>navigation.navigate("Truck_Search")}
         >
           <Image
             className="w-12 h-12 mx-auto"
@@ -24,6 +25,7 @@ const Chosing = () => {
         <TouchableOpacity
           style={{ width: "30%", height: 100 }}
           className="bg-orange-100 items-center justify-center rounded-md flex-column space-y-1"
+          onPress={()=>navigation.navigate("Mechanic_Search")}
         >
           <Image
             className="w-12 h-12 mx-auto"
@@ -34,6 +36,7 @@ const Chosing = () => {
         <TouchableOpacity
           style={{ width: "30%", height: 100 }}
           className="bg-orange-100 items-center justify-center rounded-md flex-column space-y-1"
+          onPress={()=>navigation.navigate("Wash_Search")}
         >
           <Image
             className="w-12 h-12 mx-auto"

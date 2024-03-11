@@ -7,9 +7,11 @@ import Home_F from "./src/screens/Home_F";
 import Home_C from "./src/screens/Home_C";
 import Home_L_D from "./src/screens/Auth/Home_L_D";
 import User_Home from "./src/screens/User_Home";
-// const Stack = createNativeStackNavigator();
-import 'react-native-gesture-handler';
-
+import Truck_Search from "./src/screens/Truck/Truck_Search";
+import Mechanic_Search from "./src/screens/Mechanic/Mechanic_Search";
+import Wash_Search from "./src/screens/Wash/Wash_Search";
+import "react-native-gesture-handler";
+import Truck_Options from "./src/screens/Truck_Options";
 import {
   createStackNavigator,
   TransitionPresets,
@@ -54,6 +56,26 @@ export default function App() {
         <Stack.Screen
           name="User_Home"
           component={User_Home}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Truck_Search"
+          component={Truck_Search}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Mechanic_Search"
+          component={Mechanic_Search}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Wash_Search"
+          component={Wash_Search}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Truck_Options"
+          component={Truck_Options}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
